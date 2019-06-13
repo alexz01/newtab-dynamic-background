@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Custom Google Homepage",
+    "description": "This extension adds a random image from picsum.photos to Google.com websites.",
+    "version": "1.0",
+    "content_scripts" : [
+        {
+            "matches" : ["https://www.google.com/*"],
+            "css" : ["main.css"]
+        }
+    ],
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Custom Google BG"
+    }
+}
